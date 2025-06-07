@@ -1,4 +1,6 @@
 
+#CONVERSION METHODS 
+#******************
 def inToCm(inputIn):
     toCm = inputIn * 2.54
     print(f"{inputIn} in --> {toCm} cm")
@@ -28,6 +30,10 @@ def main():
     while(True):
         startMsg()
         inputVal = input()
+
+        #Testing *****
+        inToCm(25.4) #Nothing showing up!
+        #*****
         if inputVal.lower() == 'in':
             inches = float(input("Enter value for inches: "))
             inToCm(inches)
