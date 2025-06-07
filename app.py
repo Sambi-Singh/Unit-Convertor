@@ -1,10 +1,20 @@
 
-def inToCm(input):
-    pass
-def ftToMeter(input):
-    pass
-def lbToKilogram(input):
-    pass
+def inToCm(inputIn):
+    toCm = inputIn * 2.54
+    print(f"{inputIn} in --> {toCm} cm")
+    return
+    
+def ftToMeter(inputFt):
+    toMeter = inputFt/3.281
+    print(f"{inputFt} ft --> {toMeter} m")
+    return
+
+def lbToKilogram(inputLb):
+    toKilogram = inputLb/2.205
+    print(f"{inputLb} lb --> {toKilogram} kg")
+    return
+
+
 
 def startMsg():
     units = {'in': 'cm', 'ft':'m', 'lb':'kg'}
@@ -19,11 +29,14 @@ def main():
         startMsg()
         inputVal = input()
         if inputVal.lower() == 'in':
-            pass
+            inches = float(input("Enter value for inches: "))
+            inToCm(inches)
         elif inputVal.lower() == 'ft':
-            pass
+            feet = float(input("Enter value for feet: "))
+            ftToMeter(feet)
         elif inputVal.lower() == 'lb':
-            pass
+            pounds = float(input("Enter value for pounds: "))
+            lbToKilogram(pounds)
         elif inputVal.lower() == 'q':
             print("Qutting now, bye bye :)")
             break
