@@ -3,17 +3,17 @@
 #******************
 def inToCm(inputIn):
     toCm = inputIn * 2.54
-    print(f"{inputIn} in --> {toCm} cm")
+    print(f"{inputIn} in --> {toCm:.2f} cm")
     return
     
 def ftToMeter(inputFt):
     toMeter = inputFt/3.281
-    print(f"{inputFt} ft --> {toMeter} m")
+    print(f"{inputFt} ft --> {toMeter:.2f} m")
     return
 
 def lbToKilogram(inputLb):
     toKilogram = inputLb/2.205
-    print(f"{inputLb} lb --> {toKilogram} kg")
+    print(f"{inputLb} lb --> {toKilogram:.2f} kg")
     return
 
 
@@ -32,7 +32,7 @@ def main():
         inputVal = input()
 
         #Testing *****
-        inToCm(25.4) #Nothing showing up!
+        #inToCm(25.4) #Nothing showing up!
         #*****
         if inputVal.lower() == 'in':
             inches = float(input("Enter value for inches: "))
