@@ -3,30 +3,32 @@
 #******************
 def inToCm(inputIn):
     toCm = inputIn * 2.54
-    print(f"{inputIn} in --> {toCm:.2f} cm")
+    print(f"\n{inputIn} in --> {toCm:.2f} cm")
     return
     
 def ftToMeter(inputFt):
     toMeter = inputFt/3.281
-    print(f"{inputFt} ft --> {toMeter:.2f} m")
+    print(f"\n{inputFt} ft --> {toMeter:.2f} m\n")
     return
 
 def lbToKilogram(inputLb):
     toKilogram = inputLb/2.205
-    print(f"{inputLb} lb --> {toKilogram:.2f} kg")
+    print(f"\n{inputLb} lb --> {toKilogram:.2f} kg")
     return
 
 
 
 def startMsg():
     units = {'in': 'cm', 'ft':'m', 'lb':'kg'}
-    
-    print("**-- Please enter the abbreviation (in, ft, lb, and q to quit) of the unit you wish to convert --**\n")
+    print("---------------------")
+
     for unit in units:
         print(f"{unit} to {units[unit]}")
     print("---------------------")
 def main():
     #print("hi")
+    print("\n**-- Please enter the abbreviation (in, ft, lb, and q to quit) of the unit you wish to convert --**\n")
+
     while(True):
         startMsg()
         inputVal = input()
